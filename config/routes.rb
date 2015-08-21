@@ -7,6 +7,10 @@ Rails.application.routes.draw do
 
    resources :articles
 
+   namespace :backend do
+    resources :articles
+   end
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
